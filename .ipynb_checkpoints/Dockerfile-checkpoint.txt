@@ -1,0 +1,33 @@
+# Etapa 1: Imagen base ligera con Python.
+FROM python:3.11-slim
+
+# Etapa 2: Establecer variables de entorno para Python y el puerto de la app.
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV PORT=8080
+
+# Etapa 3: Crear y establecer el directorio de trabajo dentro del contenedor.
+WORKDIR /app
+
+# Etapa 4: Instalar dependencias.
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Etapa 5: Crear carpeta artifacts y copiar los archivos
+RUN mkdir -p artifacts
+COPY api.py .
+COPY modelo_breastcancer.pkl ./artifacts/
+COPY scaler.pkl ./artifacts/
+COPY model_manifest.json ./artifacts/
+
+# Verificar que los archivos se copiaron correctamente
+RUN echo "Verificando archivos..." && \
+    ls -la && \
+    ls -la artifacts/ && \
+    echo "Archivos verificados"
+
+# Etapa 6: Exponer el puerto que la aplicación usará.
+EXPOSE 8080
+
+# Etapa 7: Comando para ejecutar la aplicación con Gunicorn.
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "api:app"]
