@@ -50,7 +50,7 @@ jobs:
          username: ${{ secrets.DOCKERHUB_USERNAME }}
          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    # - name: Push Docker image
+    - name: Push Docker image
        run: |
          docker tag breastcancer-api your-dockerhub-username/breastcancer-api:latest
          docker push your-dockerhub-username/breastcancer-api:latest
