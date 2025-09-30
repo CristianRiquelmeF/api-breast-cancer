@@ -15,10 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Etapa 5: Crear carpeta artifacts y copiar los archivos
 RUN mkdir -p artifacts
-COPY api.py .
-COPY modelo_breastcancer.pkl ./artifacts/
-COPY scaler.pkl ./artifacts/
-COPY model_manifest.json ./artifacts/
+COPY . .
 
 # Verificar que los archivos se copiaron correctamente
 RUN echo "Verificando archivos..." && \
