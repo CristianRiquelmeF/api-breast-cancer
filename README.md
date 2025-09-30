@@ -25,42 +25,37 @@ El objetivo de este proyecto es proporcionar una interfaz de programación de ap
 
   ---
 
+# Modelo de Machine Learning
+#### Dataset
+
+    Fuente: Wisconsin Breast Cancer Dataset
+
+    Características: 30 features numéricos
+
+    Target: 0 (Benigno), 1 (Maligno)
+
+#### Entrenamiento
+
+El modelo fue entrenado con las siguientes especificaciones:
+
+    Algoritmo: Random Forest Classifier
+
+    Optimización: GridSearchCV con validación cruzada
+
+    Métricas: Accuracy, Precision, Recall, F1-Score, AUC-ROC
+
+    Rendimiento: AUC-ROC de 0.99 (Excelente)
+
+  ---
+
 Instalación 
 
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
-    Clona el repositorio:
+    Clona el repositorio: git clone https://github.com/CristianRiquelmeF/api-breast-cancer.git
 
-git clone https://github.com/CristianRiquelmeF/api-breast-cancer.git
+---
 
-Crea un entorno virtual:
 
-python -m venv env
-
-Activa el entorno virtual:
-
-    En Windows:
-
-env\Scripts\activate
-
-Instalación ⚙️
-
-Para ejecutar este proyecto localmente, sigue estos pasos:
-
-    Clona el repositorio:
-    Bash
-
-git clone https://github.com/CristianRiquelmeF/api-breast-cancer.git
-
-Crea un entorno virtual:
-Bash
-
-python -m venv env
-
-Activa el entorno virtual:
-
-    En Windows:
-
-env\Scripts\activate
     
 
