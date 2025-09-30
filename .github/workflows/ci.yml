@@ -43,14 +43,14 @@ jobs:
       run: |
         docker build -t breastcancer-api -f Dockerfile.txt .
 
-    # Descomentar si quieres subir a DockerHub/GHCR
-    # - name: Log in to DockerHub
-    #   uses: docker/login-action@v3
-    #   with:
-    #     username: ${{ secrets.DOCKERHUB_USERNAME }}
-    #     password: ${{ secrets.DOCKERHUB_TOKEN }}
+   Descomentar si quieres subir a DockerHub/GHCR
+    - name: Log in to DockerHub
+      uses: docker/login-action@v3
+       with:
+         username: ${{ secrets.DOCKERHUB_USERNAME }}
+         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     # - name: Push Docker image
-    #   run: |
-    #     docker tag breastcancer-api your-dockerhub-username/breastcancer-api:latest
-    #     docker push your-dockerhub-username/breastcancer-api:latest
+       run: |
+         docker tag breastcancer-api your-dockerhub-username/breastcancer-api:latest
+         docker push your-dockerhub-username/breastcancer-api:latest
