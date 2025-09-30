@@ -56,8 +56,7 @@ Verifica el estado del servicio.
 
 POST/predict
 
-Este endpoint se utiliza para realizar predicciones.
-Descripción: Recibe un objeto JSON con las características del tumor y devuelve una predicción.
+Este endpoint se utiliza para realizar predicciones. Recibe un objeto JSON con las características del tumor y devuelve una predicción.
 Respuesta exitosa: Código 200 OK
     
   ---
