@@ -55,7 +55,8 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
     Clona el repositorio: git clone https://github.com/CristianRiquelmeF/api-breast-cancer.git
 
 ---
+> Proyecto desarrollado como parte de portafolio de Machine Learning avanzado.
+---
 
-
-    
-
+#### Diclaimer
+> Este proyecto es para fines educativos y de demostración. No debe ser utilizado para diagnósticos médicos reales. Siempre consulte con profesionales de la salud para diagnósticos médicos.
