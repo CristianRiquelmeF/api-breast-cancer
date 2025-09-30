@@ -25,7 +25,7 @@ El objetivo de este proyecto es proporcionar una interfaz de programación de ap
 
   ---
 
-# Modelo de Machine Learning
+## Modelo de Machine Learning
 #### Dataset
 
     Fuente: Wisconsin Breast Cancer Dataset
@@ -46,9 +46,37 @@ El modelo fue entrenado con las siguientes especificaciones:
 
     Rendimiento: AUC-ROC de 0.99 (Excelente)
 
-  ---
+---
 
-Instalación 
+#### Endpoints de la API 
+
+GET /health
+
+Verifica el estado del servicio.
+
+POST/predict
+
+Este endpoint se utiliza para realizar predicciones.
+Descripción: Recibe un objeto JSON con las características del tumor y devuelve una predicción.
+Respuesta exitosa: Código 200 OK
+    
+  ---
+### Ejemplo de muestra de estado de la API en Docker
+
+<img width="921" height="172" alt="imagen" src="https://github.com/user-attachments/assets/62d3ef5a-13b1-4baf-ba15-75ada979c5d7" />
+
+### Ejemplo de solicitud y de respuesta en POSTMAN
+
+<img width="921" height="416" alt="imagen" src="https://github.com/user-attachments/assets/3456fdc5-e132-4f0f-b308-7bf81ac2b6cb" />
+
+---
+### Enlace a imagen creada en Docker
+
+    https://github.com/CristianRiquelmeF/api-breast-cancer/pkgs/container/api-breast-cancer
+
+---
+
+#### Instalación 
 
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
