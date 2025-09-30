@@ -6,17 +6,22 @@ Descripción del Proyecto
 
 El objetivo de este proyecto es proporcionar una interfaz de programación de aplicaciones (API) que permita a los usuarios obtener predicciones sobre el diagnóstico de cáncer de mama. La API recibe como entrada un conjunto de características de un tumor y devuelve una predicción de si el tumor es benigno o maligno, basándose en un modelo de Máquinas de Vectores de Soporte (SVM) previamente entrenado.
 
-Tecnologías Utilizadas 
+## Características
 
-    Python: Lenguaje de programación principal.
+- **Modelo de ML**: Random Forest Classifier optimizado con GridSearchCV
+- **API REST**: Desarrollada con FastAPI
+- **Documentación Automática**: Swagger UI y ReDoc integrados
+- **Validación de Datos**: Usando Pydantic
+- **Preprocesamiento**: Escalado de características y encoding
+- **Métricas**: Evaluación completa con curvas ROC y reportes de clasificación
 
-    Flask: Framework web para la creación de la API.
+## Tecnologías Utilizadas
 
-    Scikit-learn: Para la creación y entrenamiento del modelo de Machine Learning.
-
-    Pandas: Para la manipulación y análisis de datos.
-
-    Gunicorn: Servidor WSGI para producción.
+- **Backend**: FastAPI, Uvicorn
+- **Machine Learning**: Scikit-learn, Pandas, NumPy
+- **Visualización**: Matplotlib, Seaborn
+- **Serialización**: Joblib
+- **Type Hints**: Pydantic
 
   ---
 
