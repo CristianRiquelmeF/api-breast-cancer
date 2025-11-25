@@ -1,6 +1,6 @@
 # API de Predicción de Cáncer de Mama
 
-Esta es una API RESTful desarrollada en Python con Flask que utiliza un modelo de Machine Learning para predecir si un tumor de cáncer de mama es benigno o maligno.
+Esta es una API REST desarrollada en Python con Flask que utiliza un modelo de Machine Learning para predecir si un tumor de cáncer de mama es benigno o maligno.
 
 Descripción del Proyecto 
 
@@ -9,7 +9,7 @@ El objetivo de este proyecto es proporcionar una interfaz de programación de ap
 ## Características
 
 - **Modelo de ML**: Random Forest Classifier optimizado con GridSearchCV
-- **API REST**: Desarrollada con FastAPI
+- **API REST**: Desarrollada con flask
 - **Documentación Automática**: Swagger UI y ReDoc integrados
 - **Validación de Datos**: Usando Pydantic
 - **Preprocesamiento**: Escalado de características y encoding
