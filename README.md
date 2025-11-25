@@ -10,18 +10,17 @@ El objetivo de este proyecto es proporcionar una interfaz de programación de ap
 
 - **Modelo de ML**: Random Forest Classifier optimizado con GridSearchCV
 - **API REST**: Desarrollada con flask
-- **Documentación Automática**: Swagger UI y ReDoc integrados
-- **Validación de Datos**: Usando Pydantic
+- **Validación de Datos**: Usando Pytest
 - **Preprocesamiento**: Escalado de características y encoding
 - **Métricas**: Evaluación completa con curvas ROC y reportes de clasificación
 
 ## Tecnologías Utilizadas
 
-- **Backend**: FastAPI, Uvicorn
+- **Backend**: API REST, Uvicorn
 - **Machine Learning**: Scikit-learn, Pandas, NumPy
 - **Visualización**: Matplotlib, Seaborn
 - **Serialización**: Joblib
-- **Type Hints**: Pydantic
+- **Type Hints**: Pytest
 
   ---
 
